@@ -2,9 +2,11 @@ import axios from "axios";
 import express from "express";
 import dotenv from "dotenv";
 import data from "./data.js";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
+app.use(cors());
 const actualData = data;
 
 //for question 2, for the purpose of front end
